@@ -1,0 +1,10 @@
+.captionStyle {
+  bottom: 50%;
+}
+div.textRow {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
