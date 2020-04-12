@@ -9,13 +9,38 @@ main {
     display: flex;
     justify-content:center;
     text-align: center;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 8%;
+    padding-bottom: 8%;
   }
   .myCard {
       padding: 0;
       text-align: center;
       align-items: center;
-      
+      .innerCard1, .innerCard2, .innerCard3, .innerCard4 {
+          padding-top: 40%;
+          padding-bottom: 40%;
+          background-size: cover;
+          border-radius: 0;
+      }
+     .innerCard1 {
+        background-image: url(../images/feetonbooks.jpg);
+     } 
+     .innerCard2 {
+         background-image: url(../images/readingtime.jpg);
+     }
+     .innerCard3{
+         background-image: url(../images/bigwindow.jpg)
+     }
+     .innerCard4 {
+         background-image: url(../images/mug.jpg);
+     }
+  }
+  .subscribeRow {
+      background-color: rgb(34, 33, 33);
+      color: white;
+      padding-top: 5%;
+      padding-bottom: 5%;
   }
 }
+
+

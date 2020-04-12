@@ -5,16 +5,94 @@
   display: flex;
   justify-content: flex-end;
 }
+html {
+  font-family: 'Lato', sans-serif;
+}
 .container {
   max-width: 1200px;
 }
-.row {
-  border: 1px solid red;
+.btn {
+  background-color: #2199CC;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #40b0e0;
+}
+footer .topFooter {
+  background-color: #141414;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 10%;
+}
+footer .topFooter p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+}
+footer .topFooter a {
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  color: white;
+  border-bottom: 1px solid #585858;
+}
+footer .topFooter a:hover {
+  color: #9E6019;
+}
+footer .topFooter .footerSocial {
+  color: white;
+}
+@media (max-width: 768px) {
+  footer .topFooter .footerSocial {
+    display: flex;
+    justify-content: center;
+  }
+}
+footer .topFooter .footerSocial a {
+  border: none;
+  padding-right: 2rem;
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding-bottom: 2rem;
+}
+footer .topFooter a:hover {
+  color: #9E6019;
+}
+footer .topFooter iframe {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  footer .topFooter .footerDiv {
+    padding-top: 5%;
+  }
+}
+footer .bottomFooter {
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 0.8rem;
+  padding-top: 2rem;
+  padding-bottom: 3%;
+}
+footer .bottomFooter a {
+  color: white;
+  padding: 1.4%;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+footer .bottomFooter a:hover {
+  color: #9E6019;
+}
+footer .bottomFooter p {
+  padding: 0;
+  margin-bottom: 0.7rem;
 }
 /*# sourceMappingURL=main.css.map */
 header .fulltopHeader {
   background-color: black;
-  border-top: 2px solid green;
+  border-top: 5px solid #9E6019;
 }
 div.headerRow {
   padding-top: 10px;
@@ -23,25 +101,92 @@ div.headerRow {
   font-size: 1.5rem;
   align-items: center;
 }
+@media (max-width: 768px) {
+  div.headerRow .flexEnd {
+    justify-content: center;
+  }
+}
 div.headerRow p {
   margin-bottom: 0;
   font-size: 0.8rem;
   align-self: center;
 }
-div.headerRow span {
-  padding-right: 6%;
+@media (max-width: 768px) {
+  div.headerRow p {
+    padding-bottom: 0.8%;
+  }
 }
-.navBar .logoStyle img {
+div.headerRow a {
+  padding-right: 6%;
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  div.headerRow a {
+    padding: 12px;
+  }
+}
+div.headerRow a:hover {
+  color: #9E6019;
+}
+@media (max-width: 768px) {
+  div.headerRow .mySocial {
+    display: flex;
+    justify-content: center;
+  }
+}
+.stickyNav {
+  background-color: white;
+}
+@media (max-width: 768px) {
+  .stickyNav {
+    position: static;
+  }
+}
+.navBar {
+  background-color: white;
+}
+@media (max-width: 768px) {
+  .navBar .logoStyle {
+    padding-left: 0;
+  }
+}
+.navBar img {
   width: 170px;
   padding-top: 3%;
   padding-bottom: 3%;
 }
-.navBar nav ul li {
-  margin-right: 15px;
+@media (max-width: 768px) {
+  .navBar img {
+    width: 140px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 }
-.navBar nav button {
-  margin-left: 5px;
-  margin-right: 25px;
+.navBar nav ul li {
+  margin-right: 10px;
+}
+.navBar nav ul li :hover {
+  color: #2199CC !important;
+}
+.navBar nav .mydropItem {
+  font-size: 0.9rem;
+}
+.navBar nav .btn {
+  margin-left: 1%;
+  margin-right: 1%;
+  min-width: 100px;
+  font-size: 0.9rem;
+}
+.navBar .shoppingIcon {
+  color: #9E6019;
+  margin-left: 2%;
+  align-self: center;
+}
+.navBar .hamBurger {
+  border: none;
+  position: absolute;
+  right: 0.5px;
 }
 div.myCarousel .captionStyle {
   bottom: 45%;
@@ -50,11 +195,38 @@ main div.textRow {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
 main .myCard {
   padding: 0;
   text-align: center;
   align-items: center;
+}
+main .myCard .innerCard1,
+main .myCard .innerCard2,
+main .myCard .innerCard3,
+main .myCard .innerCard4 {
+  padding-top: 40%;
+  padding-bottom: 40%;
+  background-size: cover;
+  border-radius: 0;
+}
+main .myCard .innerCard1 {
+  background-image: url(../images/feetonbooks.jpg);
+}
+main .myCard .innerCard2 {
+  background-image: url(../images/readingtime.jpg);
+}
+main .myCard .innerCard3 {
+  background-image: url(../images/bigwindow.jpg);
+}
+main .myCard .innerCard4 {
+  background-image: url(../images/mug.jpg);
+}
+main .subscribeRow {
+  background-color: #222121;
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }

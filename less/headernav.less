@@ -2,9 +2,10 @@
 
 header{
     
+    
     .fulltopHeader{
         background-color: black;
-      border-top: 2px solid green;
+      border-top: 5px solid #9E6019;
     //   div.topHeader {
     //     display: flex;
     //     justify-content: space-between;
@@ -20,42 +21,75 @@ header{
         color: white;
         font-size: 1.5rem;
         align-items: center;
+        .flexEnd { @media @mobile {justify-content: center; }}
+    
+        // @media @mobile {justify-content: center;}
        p{
           margin-bottom: 0;
           font-size: .8rem;
           align-self: center;
+          @media @mobile {padding-bottom: .8%;}
           }
-          span {
+          a {
             padding-right: 6%;
+            color: white;
+            text-decoration: none;
+        @media @mobile {padding: 12px;}
           }
+          a:hover {color: #9E6019;}
+          .mySocial {@media @mobile {display: flex; justify-content: center;}}
       }
 
 
 
 // NavBar
 
+
+.stickyNav{background-color: white;
+@media @mobile {position: static;}
+}
 .navBar {
-.logoStyle img{
+    // @media @mobile {padding-left: 0;}
+   background-color: white;
+.logoStyle 
+{@media @mobile {padding-left: 0;}}
+img{
     width: 170px;
     padding-top: 3%;
     padding-bottom: 3%;
+    @media @mobile {width: 140px; padding-top: 5%; padding-bottom: 5%;}
   }
 
   nav  {
+    //   @media @mobile {position: relative;}
+    
     ul li {
-     margin-right: 15px;
+     margin-right: 10px;
+    //  ul {position: absolute; left: -999em;}
+     :hover {color: #2199CC !important;}
+     
    }
- button {
-   margin-left: 5px;
-   margin-right: 25px;
+   .mydropItem {font-size: .9rem;}
+ .btn {
+   margin-left: 1%;
+   margin-right: 1%;
+   min-width: 100px;
+   font-size: .9rem;
  }
  }
+ .shoppingIcon {
+     color: #9E6019;
+     margin-left: 2%;
+     align-self: center;
+    
+ }
+ .hamBurger {
+     border: none;
+     position: absolute;
+     right: .5px;
+    }
+// .hamBurgerIcon {
+  
+// }
 }
 
-
-
- 
-
-
-// nav ul li ul.sub-nav {
-//     display: none; }
