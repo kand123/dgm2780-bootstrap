@@ -1,8 +1,24 @@
 
 div.myCarousel{
+    .mySlide {
+        width: 100%;
+        max-height: 80vh;
+        h1{color: white; text-shadow: 2px 3px 12px #333; font-size: 3.5rem; padding-bottom: 1.5rem;padding-top: 2rem;}
+        p{text-shadow: 2px 3px 12px #333; font-size: 1.5rem; margin-bottom: 2rem;}
+        img {opacity: 95%;}
+        a {width: 150px; padding: 10px;}
+        @media @mobile {
+h1{font-size: 2.5rem;padding-bottom: .8rem; padding-top: 1rem;}
+p {font-size: 1.2rem; margin-bottom: 1.5rem;}
+
+        }
+    }
+    
 .captionStyle {
-    bottom: 45%;
+    bottom: 30%;
+    @media @mobile {bottom: 10%;}
   }
+  
 }
 main {
   div.textRow {
@@ -11,35 +27,67 @@ main {
     text-align: center;
     padding-top: 8%;
     padding-bottom: 8%;
+    
+    h1{margin-bottom: 4%; @media @mobile {padding-top: 2rem;}}
+    h3{margin-bottom: 6%; color: #9E6019;}
+    .littleDots li{background-color: #9E6019; width: .5rem;}
+    .quoteSlide {
+        p {margin-bottom: 8rem; margin-top: 2rem;}
+    }
   }
+
   .myCard {
       padding: 0;
+      color: black;
       text-align: center;
-      align-items: center;
+    //   align-items: center;
       .innerCard1, .innerCard2, .innerCard3, .innerCard4 {
           padding-top: 40%;
           padding-bottom: 40%;
           background-size: cover;
+          background-position: 0 100%;
           border-radius: 0;
+          text-shadow: 2px 3px 10px #888;
+          
+          h3{margin-top: 1rem; padding-top: 2rem; padding-bottom: 0rem; margin-bottom: 0;}
+          a{padding: 10px;min-width: 120px;}
       }
      .innerCard1 {
-        background-image: url(../images/feetonbooks.jpg);
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+          ),url(../images/feetonbooks.jpg);
      } 
      .innerCard2 {
-         background-image: url(../images/readingtime.jpg);
+         background-image: linear-gradient(
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+          ),url(../images/readingtime.jpg);
      }
      .innerCard3{
-         background-image: url(../images/bigwindow.jpg)
+         background-image:linear-gradient(
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+          ), url(../images/bigwindow.jpg)
      }
      .innerCard4 {
-         background-image: url(../images/mug.jpg);
+         background-image: linear-gradient(
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+          ),url(../images/mug.jpg);
      }
   }
   .subscribeRow {
       background-color: rgb(34, 33, 33);
       color: white;
-      padding-top: 5%;
-      padding-bottom: 5%;
+      padding-top: 7%;
+      padding-bottom: 7%;
+      font-size: 2rem;
+      .flexEnd {padding-right: 4%; justify-content: flex-start;
+        input{width: 270px;}
+    button{padding:9px;min-width:120px;margin-left: 10px; color: white;}}
+     .subscribeNote{display: flex; 
+    h4 {padding-left: 1rem;}}
   }
 }
 

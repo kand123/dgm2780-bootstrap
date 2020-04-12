@@ -4,6 +4,14 @@
 h1 {
   font-size: 2.1rem;
   color: #9E6019;
+  font-family: 'Alegreya SC', serif;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+h3 {
+  font-family: 'Alegreya SC', serif;
 }
 .flexEnd {
   display: flex;
@@ -193,8 +201,47 @@ div.headerRow a:hover {
   position: absolute;
   right: 0.5px;
 }
+div.myCarousel .mySlide {
+  width: 100%;
+  max-height: 80vh;
+}
+div.myCarousel .mySlide h1 {
+  color: white;
+  text-shadow: 2px 3px 12px #333;
+  font-size: 3.5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 2rem;
+}
+div.myCarousel .mySlide p {
+  text-shadow: 2px 3px 12px #333;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+div.myCarousel .mySlide img {
+  opacity: 95%;
+}
+div.myCarousel .mySlide a {
+  width: 150px;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  div.myCarousel .mySlide h1 {
+    font-size: 2.5rem;
+    padding-bottom: 0.8rem;
+    padding-top: 1rem;
+  }
+  div.myCarousel .mySlide p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
 div.myCarousel .captionStyle {
-  bottom: 45%;
+  bottom: 30%;
+}
+@media (max-width: 768px) {
+  div.myCarousel .captionStyle {
+    bottom: 10%;
+  }
 }
 main div.textRow {
   display: flex;
@@ -203,10 +250,30 @@ main div.textRow {
   padding-top: 8%;
   padding-bottom: 8%;
 }
+main div.textRow h1 {
+  margin-bottom: 4%;
+}
+@media (max-width: 768px) {
+  main div.textRow h1 {
+    padding-top: 2rem;
+  }
+}
+main div.textRow h3 {
+  margin-bottom: 6%;
+  color: #9E6019;
+}
+main div.textRow .littleDots li {
+  background-color: #9E6019;
+  width: 0.5rem;
+}
+main div.textRow .quoteSlide p {
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+}
 main .myCard {
   padding: 0;
+  color: black;
   text-align: center;
-  align-items: center;
 }
 main .myCard .innerCard1,
 main .myCard .innerCard2,
@@ -215,25 +282,63 @@ main .myCard .innerCard4 {
   padding-top: 40%;
   padding-bottom: 40%;
   background-size: cover;
+  background-position: 0 100%;
   border-radius: 0;
+  text-shadow: 2px 3px 10px #888;
+}
+main .myCard .innerCard1 h3,
+main .myCard .innerCard2 h3,
+main .myCard .innerCard3 h3,
+main .myCard .innerCard4 h3 {
+  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+  margin-bottom: 0;
+}
+main .myCard .innerCard1 a,
+main .myCard .innerCard2 a,
+main .myCard .innerCard3 a,
+main .myCard .innerCard4 a {
+  padding: 10px;
+  min-width: 120px;
 }
 main .myCard .innerCard1 {
-  background-image: url(../images/feetonbooks.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../images/feetonbooks.jpg);
 }
 main .myCard .innerCard2 {
-  background-image: url(../images/readingtime.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../images/readingtime.jpg);
 }
 main .myCard .innerCard3 {
-  background-image: url(../images/bigwindow.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../images/bigwindow.jpg);
 }
 main .myCard .innerCard4 {
-  background-image: url(../images/mug.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../images/mug.jpg);
 }
 main .subscribeRow {
   background-color: #222121;
   color: white;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  font-size: 2rem;
+}
+main .subscribeRow .flexEnd {
+  padding-right: 4%;
+  justify-content: flex-start;
+}
+main .subscribeRow .flexEnd input {
+  width: 270px;
+}
+main .subscribeRow .flexEnd button {
+  padding: 9px;
+  min-width: 120px;
+  margin-left: 10px;
+  color: white;
+}
+main .subscribeRow .subscribeNote {
+  display: flex;
+}
+main .subscribeRow .subscribeNote h4 {
+  padding-left: 1rem;
 }
 main .aboutRow {
   padding-top: 5%;
