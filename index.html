@@ -1,371 +1,513 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>The Cozy Corner</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link href="img/favicon.png" type="img/png" rel="icon"> -->
-	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap" rel="stylesheet">
-	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-	<link href="css/index.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-<header >	
-<div class="container-fluid fulltopHeader">
-	<div class="container">
-	<div class="row headerRow">
-		<div class="col-12 col-md-4 mySocial"><a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook-f">
-		</a><a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a><a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a><a href="https://www.pinterest.com" target="_blank" class="fab fa-pinterest-p"></a></div><div class="col-12 col-md-8 flexEnd"><p>Call today! 801-555-5555 | rachel@cozycorner.com</p></div>
-	</div>
-</div>	
-</div>
-</header>
-<div class="container-fluid stickyNav sticky-top">
-	<div class="container">
-	<div class="row navBar ">
-		<div class="col-4 logoStyle"><img src="images/cozycornerlogo1.png" alt=""/></div>
-		<div class="col-8 flexEnd">
-			<nav class="navbar  navbar-expand-lg navbar-light">
-				<!-- <a class="navbar-brand" href="#">Navbar</a> -->
-				<button class="navbar-toggler hamBurger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				  <span class="navbar-toggler-icon hamBurgerIcon"></span>
-				</button>
-			
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				  <ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-					  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">About</a>
-					  </li>
-					<!-- <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						  About
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <a class="dropdown-item" href="#">Action</a>
-						  <a class="dropdown-item" href="#">Another action</a>
-						  <div class="dropdown-divider"></div>
-						  <a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					  </li> -->
-					<li class="nav-item dropdown">
-					  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Locations
-					  </a>
-					  <div class="dropdown-menu droppY" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item mydropItem" href="#">Provo</a>
-						<a class="dropdown-item mydropItem" href="#">Salt Lake City</a>
+  <head>
+    <title>Home: The Cozy Corner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/index.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid fulltopHeader">
+        <div class="container">
+          <div class="row headerRow">
+            <div class="col-12 col-md-4 mySocial">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="fab fa-facebook-f"
+              >
+              </a
+              ><a
+                href="https://twitter.com"
+                target="_blank"
+                class="fab fa-twitter"
+              ></a
+              ><a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="fab fa-instagram"
+              ></a
+              ><a
+                href="https://www.pinterest.com"
+                target="_blank"
+                class="fab fa-pinterest-p"
+              ></a>
+            </div>
+            <div class="col-12 col-md-8 flexEnd">
+              <p>Call today! 801-555-5555 | rachel@cozycorner.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid stickyNav sticky-top">
+      <div class="container">
+        <div class="row navBar">
+          <div class="col-4 logoStyle">
+            <img src="images/cozycornerlogo1.png" alt="" />
+          </div>
+          <div class="col-8 flexEnd">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <button
+                class="navbar-toggler hamBurger"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon hamBurgerIcon"></span>
+              </button>
 
-					<a class="dropdown-item mydropItem" href="#">Park City</a>
-					  </div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						  Book Reviews
-						</a>
-						<div class="dropdown-menu droppY" aria-labelledby="navbarDropdown">
-						  <a class="dropdown-item mydropItem" href="#">Children's Stories</a>
-						  <a class="dropdown-item mydropItem" href="#">Fantasy Books</a>
-						  <a class="dropdown-item mydropItem" href="#">Top-rated Business</a>
-						  <a class="dropdown-item mydropItem" href="#">Self-help</a>
-						</div>
-					  </li>
-					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Browse
-						</a>
-						<div class="dropdown-menu droppY" aria-labelledby="navbarDropdown">
-						  <a class="dropdown-item mydropItem" href="#">By Title</a>
-						  <a class="dropdown-item mydropItem" href="#">By Author</a>
-						  <a class="dropdown-item mydropItem" href="#">By Age Group</a>
-						
-						  <a class="dropdown-item mydropItem" href="#">By Topic</a>
-						</div>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#">Shop</a>
-					  </li>
-					<!-- <li class="nav-item">
-					  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-					</li> -->
-				  </ul>
-				 
-				  <a class="btn btn-primary" href="contact.html" role="button">Contact Us</a>
-					<!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Contact Us</button> -->
-					
-			
-				</div>
-			  </nav>
-			  <a class="fas fa-shopping-cart shoppingIcon"></a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html"
+                      >Home <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
 
-		</div>
-	</div>
-	
-	</div>
-</div>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Locations
+                    </a>
+                    <div
+                      class="dropdown-menu droppY"
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <a class="dropdown-item mydropItem" href="#">Provo</a>
+                      <a class="dropdown-item mydropItem" href="#"
+                        >Salt Lake City</a
+                      >
 
+                      <a class="dropdown-item mydropItem" href="#">Park City</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Book Reviews
+                    </a>
+                    <div
+                      class="dropdown-menu droppY"
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <a class="dropdown-item mydropItem" href="#"
+                        >Children's Stories</a
+                      >
+                      <a class="dropdown-item mydropItem" href="#"
+                        >Fantasy Books</a
+                      >
+                      <a class="dropdown-item mydropItem" href="#"
+                        >Top-rated Business</a
+                      >
+                      <a class="dropdown-item mydropItem" href="#">Self-help</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Browse
+                    </a>
+                    <div
+                      class="dropdown-menu droppY"
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <a class="dropdown-item mydropItem" href="#">By Title</a>
+                      <a class="dropdown-item mydropItem" href="#">By Author</a>
+                      <a class="dropdown-item mydropItem" href="#"
+                        >By Age Group</a
+                      >
 
+                      <a class="dropdown-item mydropItem" href="#">By Topic</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                  </li>
+                </ul>
 
+                <a class="btn btn-primary" href="contact.html" role="button"
+                  >Contact Us</a
+                >
+              </div>
+            </nav>
+            <a class="fas fa-shopping-cart shoppingIcon"></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- Carousel -->
+    <!-- Carousel -->
 
+    <div class="container-fluid">
+      <div class="row myCarousel">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active mySlide">
+              <img
+                src="images/cozycoffee2.jpg"
+                class="d-block w-100 carouselImg"
+                alt="..."
+              />
+              <div class="carousel-caption captionStyle d-md-block">
+                <h1>The Cozy Corner</h1>
 
+                <p>The best selection of books anywhere on the planet</p>
+                <a class="btn btn-primary" href="#" role="button">Shop Now</a>
+              </div>
+            </div>
+            <div class="carousel-item mySlide">
+              <img
+                src="images/cozyspot2.jpg"
+                class="d-block w-100 carouselImg"
+                alt="..."
+              />
+              <div class="carousel-caption captionStyle d-md-block">
+                <h1>The Cozy Corner</h1>
+                <p>Come enjoy our cozy reading nooks</p>
+                <a class="btn btn-primary" href="#" role="button">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
 
-<div class="container-fluid">
-<div class="row myCarousel">
-	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-		<!-- <ol class="carousel-indicators">
-		  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-		  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-		  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-		</ol> -->
-		<div class="carousel-inner">
-		  <div class="carousel-item active mySlide">
-			<img src="images/cozycoffee2.jpg" class="d-block w-100 carouselImg" alt="...">
-			<div class="carousel-caption captionStyle  d-md-block">
-			  <h1>The Cozy Corner</h1>
-	
-			<p>The best selection of books anywhere on the planet</p>
-			  <a class="btn btn-primary" href="#" role="button">Shop Now</a>
-			  <!-- <div class="jumbotron">
-				<h1 class="display-4">Hello, world!</h1>
-				<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-				<hr class="my-4">
-				<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-				<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-			  </div> -->
-			</div>
-		  </div>
-		  <div class="carousel-item mySlide">
-			<img src="images/cozyspot2.jpg" class="d-block w-100 carouselImg" alt="...">
-			<div class="carousel-caption captionStyle  d-md-block">
-				<h1>The Cozy Corner</h1>
-			  <p>Come enjoy our cozy reading nooks</p>
-			  <a class="btn btn-primary" href="#" role="button">Learn More</a>
-			</div>
-		  </div>
-		  <!-- <div class="carousel-item mySlide">
-			<img src="images/stackofbooks2.jpg" class="d-block w-100 carouselImg" alt="...">
-			<div class="carousel-caption captionStyle d-none d-md-block">
-			  <h1>The Cozy Corner</h1>
-			  <p>Find out about thest best new titles</p>
-			  <a class="btn btn-primary" href="#" role="button">Read Reviews</a>
-			</div>
-		  </div> -->
-		</div>
-		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		  <span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		  <span class="sr-only">Next</span>
-		</a>
-	  </div>
+    <!-- Main -->
 
-</div>
-</div>
+    <main>
+      <!-- Text Intro -->
 
-<!-- Main -->
+      <div class="container">
+        <div class="row textRow">
+          <div class="col textSections">
+            <h1>What is Cozy Corner?</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore.
+            </p>
+          </div>
+        </div>
+      </div>
 
-<main>
-<!-- Text Intro -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-3 myCard">
+            <div class="card innerCard1" style="width: auto;">
+              <div class="card-body">
+                <h3 class="card-title">Book Club</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Join Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 myCard">
+            <div class="card innerCard2" style="width: auto;">
+              <div class="card-body">
+                <h3 class="card-title">Book Reviews</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Read Reviews</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 myCard">
+            <div class="card innerCard3" style="width: auto;">
+              <div class="card-body">
+                <h3 class="card-title">Need a book?</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 myCard">
+            <div class="card innerCard4" style="width: auto;">
+              <div class="card-body">
+                <h3 class="card-title">Need assistance?</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row textRow">
+          <div class="col textSections">
+            <h3>Reviews</h3>
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators littleDots">
+                <li
+                  data-target="#carouselExampleCaptions"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleCaptions"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleCaptions"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item quoteSlide active">
+                  <q
+                    >Ante in nibh mauris cursus mattis. Dui vivamus arcu felis
+                    bibendum ut tristique et egestas. Ut faucibus pulvinar
+                    elementum integer enim neque volutpat ac tincidunt. Ultrices
+                    in iaculis nunc sed augue lacus. Varius sit amet mattis
+                    vulputate enim. Viverra justo nec ultrices dui sapien eget
+                    mi proin. Urna et pharetra pharetra massa massa ultricies.
+                    Orci phasellus egestas tellus rutrum tellus pellentesque eu.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</q
+                  >
+                  <p>Author</p>
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item quoteSlide">
+                  <q
+                    >Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ante in nibh mauris cursus mattis. Dui vivamus arcu
+                    felis bibendum ut tristique et egestas. Ut faucibus pulvinar
+                    elementum integer enim neque volutpat ac tincidunt. Ultrices
+                    in iaculis nunc sed augue lacus. Varius sit amet mattis
+                    vulputate enim. Viverra justo nec ultrices dui sapien eget
+                    mi proin. Orci phasellus egestas tellus rutrum tellus
+                    pellentesque eu.
+                  </q>
+                  <p>Author</p>
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item quoteSlide">
+                  <q
+                    >Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit ani.
+                  </q>
+                  <p>Author</p>
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid subscribeRow">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 subscribeNote">
+              <i class="far fa-envelope"></i>
+              <h4>Subscribe to our newsletter!</h4>
+            </div>
+            <div class="col-12 col-md-6 flexEnd">
+              <form class="form-inline my-2 my-lg-0">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Insert your email"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-md btn-outline-success my-2 my-sm-0"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-<div class="container">
-<div class="row textRow">
-<div class="col textSections">
-	<h1>What is Cozy Corner?</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-</div>	
-</div>	
-</div>
+    <footer>
+      <div class="container-fluid topFooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-3 footerDiv">
+              <h6>CONTACT US</h6>
+              <br />
+              <p>Address:</p>
+              <p>500 Bookworm Road</p>
+              <p>Salt Lake City, UT 84001</p>
+              <br />
+              <p>Phone:</p>
+              <p>(801)555-5555</p>
+              <br />
+              <p>Email:</p>
+              <p>rachel@cozycorner.com</p>
+            </div>
+            <div class="col-12 col-md-3 footerDiv">
+              <h6>ABOUT</h6>
+              <br />
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+            <div class="col-12 col-md-3 footerDiv">
+              <nav class="nav flex-column">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="#">Locations</a>
+                <a class="nav-link" href="#">Book Reviews</a>
+                <a class="nav-link" href="#">Browse</a>
+                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </nav>
+            </div>
+            <div class="col-12 col-md-3 footerDiv">
+              <div class="footerSocial">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  class="fab fa-facebook-f"
+                >
+                </a
+                ><a
+                  href="https://twitter.com"
+                  target="_blank"
+                  class="fab fa-twitter"
+                ></a
+                ><a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="fab fa-instagram"
+                ></a
+                ><a
+                  href="https://pinterest.com"
+                  target="_blank"
+                  class="fab fa-pinterest-p"
+                ></a>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/d/u/0/embed?mid=1XHD4qkbNkgNdOE0SXY1w8xRTuL9JhDkc"
+                width="275"
+                height="275"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bottomFooter">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p>&copy; 2020 Kristin Andrews for DGM2780</p>
+              <a href="https://facebook.com" class="fab fa-facebook-f"> </a
+              ><a
+                href="https://twitter.com"
+                target="_blank"
+                class="fab fa-twitter"
+              ></a
+              ><a
+                href="https://instagram.com"
+                target="_blank"
+                class="fab fa-instagram"
+              ></a
+              ><a
+                href="https://pinterest.com"
+                target="_blank"
+                class="fab fa-pinterest-p"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-<div class="container-fluid">
-<div class="row">
-<div class="col-12 col-md-3 myCard">
-	<div class="card innerCard1" style="width: auto;">
-		<!-- <img src="..." class="card-img-top" alt="..."> -->
-		<div class="card-body">
-		  <h3 class="card-title">Book Club</h3>
-		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  <a href="#" class="btn btn-primary">Join Now</a>
-		</div>
-	  </div>
-</div>	
-<div class="col-12 col-md-3 myCard">
-	<div class="card innerCard2" style="width: auto;">
-		<!-- <img src="..." class="card-img-top" alt="..."> -->
-		<div class="card-body">
-		  <h3 class="card-title">Book Reviews</h3>
-		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  <a href="#" class="btn btn-primary">Read Reviews</a>
-		</div>
-	  </div>
-</div>
-<div class="col-12 col-md-3 myCard">
-	<div class="card innerCard3" style="width: auto;">
-		<!-- <img src="..." class="card-img-top" alt="..."> -->
-		<div class="card-body">
-		  <h3 class="card-title">Need a book?</h3>
-		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  <a href="#" class="btn btn-primary">Shop Now</a>
-		</div>
-	  </div>
-</div>
-<div class="col-12 col-md-3 myCard">
-	<div class="card innerCard4" style="width: auto;">
-		<!-- <img src="..." class="card-img-top" alt="..."> -->
-		<div class="card-body">
-		  <h3 class="card-title">Need assistance?</h3>
-		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  <a href="#" class="btn btn-primary">Contact Us</a>
-		</div>
-	  </div>
-</div>
-
-
-</div>
-</div>
-<div class="container">
-	<div class="row textRow">
-		<div class="col textSections">
-			<h3>Reviews</h3>
-			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators littleDots">
-				  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-				  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-				  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner">
-				  <div class="carousel-item quoteSlide active">
-					<!-- <img src="..." class="d-block w-100" alt="..."> -->
-					<q>Ante in nibh mauris cursus mattis. Dui vivamus arcu felis bibendum ut tristique et egestas. Ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Ultrices in iaculis nunc sed augue lacus. Varius sit amet mattis vulputate enim. Viverra justo nec ultrices dui sapien eget mi proin. Urna et pharetra pharetra massa massa ultricies. Orci phasellus egestas tellus rutrum tellus pellentesque eu.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</q>
-					<p>Author</p>
-					<div class="carousel-caption d-none d-md-block">
-					  <!-- <h5>First slide label</h5>
-					  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
-					</div>
-				  </div>
-				  <div class="carousel-item quoteSlide">
-					<!-- <img src="..." class="d-block w-100" alt="..."> -->
-					<q>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante in nibh mauris cursus mattis. Dui vivamus arcu felis bibendum ut tristique et egestas. Ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Ultrices in iaculis nunc sed augue lacus. Varius sit amet mattis vulputate enim. Viverra justo nec ultrices dui sapien eget mi proin. Orci phasellus egestas tellus rutrum tellus pellentesque eu. </q>
-					<p>Author</p>
-					<div class="carousel-caption d-none d-md-block">
-					  <!-- <h5>Second slide label</h5>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
-					</div>
-				  </div>
-				  <div class="carousel-item quoteSlide">
-					<!-- <img src="..." class="d-block w-100" alt="..."> -->
-					<q>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit ani. </q>
-					<p>Author</p>
-					<div class="carousel-caption d-none d-md-block">
-					  <!-- <h5>Third slide label</h5>
-					  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
-					</div>
-				  </div>
-				</div>
-				<!-- <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				  <span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				  <span class="sr-only">Next</span>
-				</a> -->
-			  </div>
-		</div>
-	</div>
-
-</div>
-<div class="container-fluid subscribeRow">
-	<div class="container">
-	<div class="row ">
-		<div class="col-12 col-md-6 subscribeNote">
-			<i class="far fa-envelope"></i>
-			<h4>Subscribe to our newsletter! </h4>
-		</div>
-		<div class="col-12 col-md-6 flexEnd"><form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="Insert your email" aria-label="Search">
-			<button class="btn btn-md btn-outline-success my-2 my-sm-0" type="submit">Send</button>
-		  </form></div>
-		
-	</div>
-</div>
-</div>
-
-
-
-
-
-</main>
-
-<footer>
-<div class="container-fluid topFooter">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-md-3 footerDiv">
-<h6>CONTACT US</h6>
-<br>
-<P>Address:</P>
-<p>500 Bookworm Road</p>
-<p>Salt Lake City, UT 84001</p>
-<br>
-<p>Phone:</p>
-<p>(801)555-5555</p>
-<br>
-<p>Email:</p>
-<p>rachel@cozycorner.com</p>
-			</div>
-			<div class="col-12 col-md-3 footerDiv">
-<h6>ABOUT</h6>
-<br>
-<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div class="col-12 col-md-3 footerDiv">
-				<nav class="nav flex-column">
-					<a class="nav-link active" href="index.html">Home</a>
-					<a class="nav-link" href="about.html">About</a>
-					<a class="nav-link" href="#">Locations</a>
-					<a class="nav-link" href="#">Book Reviews</a>
-					<a class="nav-link" href="#">Browse</a>
-					<a class="nav-link" href="#">Shop</a>
-					<a class="nav-link" href="contact.html">Contact Us</a>
-				  </nav>
-							</div>
-							<div class="col-12 col-md-3 footerDiv">
-								<div class="footerSocial"><a href="https://facebook.com" target="_blank" class="fab fa-facebook-f">
-								</a><a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a><a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a><a href="https://pinterest.com" target="_blank" class="fab fa-pinterest-p"></a></div>
-								<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1XHD4qkbNkgNdOE0SXY1w8xRTuL9JhDkc" width="275" height="275"></iframe>		
-							</div>
-		</div>
-	</div>
-</div>
-<div class="container-fluid bottomFooter">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-<p>&copy; 2020 Kristin Andrews for DGM2780</p>
-<a href="https://facebook.com" class="fab fa-facebook-f">
-</a><a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a><a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a><a href="https://pinterest.com" target="_blank" class="fab fa-pinterest-p"></a>
-			</div>
-			
-		</div>
-	</div>
-</div>
-
-</footer>
-
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script
       src="https://kit.fontawesome.com/0e57c09841.js"
       crossorigin="anonymous"
     ></script>
-</body>
-
-
+  </body>
 </html>

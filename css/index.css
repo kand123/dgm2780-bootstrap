@@ -3,15 +3,15 @@
 }
 h1 {
   font-size: 2.1rem;
-  color: #9E6019;
-  font-family: 'Alegreya SC', serif;
+  color: #9e6019;
+  font-family: "Alegreya SC", serif;
 }
 p {
   font-size: 1rem;
   line-height: 1.8rem;
 }
 h3 {
-  font-family: 'Alegreya SC', serif;
+  font-family: "Alegreya SC", serif;
 }
 .flexEnd {
   display: flex;
@@ -24,7 +24,7 @@ html {
   max-width: 1200px;
 }
 .btn {
-  background-color: #2199CC;
+  background-color: #2199cc;
   border: none;
 }
 .btn-primary:hover {
@@ -48,7 +48,7 @@ footer .topFooter a {
   border-bottom: 1px solid #585858;
 }
 footer .topFooter a:hover {
-  color: #9E6019;
+  color: #9e6019;
 }
 footer .topFooter .footerSocial {
   color: white;
@@ -68,7 +68,7 @@ footer .topFooter .footerSocial a {
   padding-bottom: 2rem;
 }
 footer .topFooter a:hover {
-  color: #9E6019;
+  color: #9e6019;
 }
 footer .topFooter iframe {
   width: 100%;
@@ -95,16 +95,16 @@ footer .bottomFooter a {
   text-decoration: none;
 }
 footer .bottomFooter a:hover {
-  color: #9E6019;
+  color: #9e6019;
 }
 footer .bottomFooter p {
   padding: 0;
   margin-bottom: 0.7rem;
+  font-size: 0.8rem;
 }
-/*# sourceMappingURL=main.css.map */
 header .fulltopHeader {
   background-color: black;
-  border-top: 5px solid #9E6019;
+  border-top: 5px solid #9e6019;
 }
 div.headerRow {
   padding-top: 10px;
@@ -139,7 +139,7 @@ div.headerRow a {
   }
 }
 div.headerRow a:hover {
-  color: #9E6019;
+  color: #9e6019;
 }
 @media (max-width: 768px) {
   div.headerRow .mySocial {
@@ -158,6 +158,11 @@ div.headerRow a:hover {
 }
 .navBar {
   background-color: white;
+}
+@media (max-width: 768px) {
+  .navBar .navbar {
+    position: relative;
+  }
 }
 @media (max-width: 768px) {
   .navBar .logoStyle {
@@ -180,7 +185,7 @@ div.headerRow a:hover {
   margin-right: 10px;
 }
 .navBar nav ul li :hover {
-  color: #2199CC !important;
+  color: #2199cc !important;
 }
 .navBar nav .mydropItem {
   font-size: 0.9rem;
@@ -192,13 +197,13 @@ div.headerRow a:hover {
   font-size: 0.9rem;
 }
 .navBar .shoppingIcon {
-  color: #9E6019;
+  color: #9e6019;
   margin-left: 2%;
   align-self: center;
 }
 .navBar .hamBurger {
   border: none;
-  position: absolute;
+  position: relative;
   right: 0.5px;
 }
 div.myCarousel .mySlide {
@@ -260,10 +265,10 @@ main div.textRow h1 {
 }
 main div.textRow h3 {
   margin-bottom: 6%;
-  color: #9E6019;
+  color: #9e6019;
 }
 main div.textRow .littleDots li {
-  background-color: #9E6019;
+  background-color: #9e6019;
   width: 0.5rem;
 }
 main div.textRow .quoteSlide p {
@@ -321,9 +326,11 @@ main .subscribeRow {
   padding-bottom: 7%;
   font-size: 2rem;
 }
-main .subscribeRow .flexEnd {
-  padding-right: 4%;
-  justify-content: flex-start;
+@media (max-width: 768px) {
+  main .subscribeRow .flexEnd {
+    padding-right: 4%;
+    justify-content: flex-start;
+  }
 }
 main .subscribeRow .flexEnd input {
   width: 270px;
@@ -333,6 +340,9 @@ main .subscribeRow .flexEnd button {
   min-width: 120px;
   margin-left: 10px;
   color: white;
+}
+main .subscribeRow .flexEnd button:hover {
+  background-color: #40b0e0;
 }
 main .subscribeRow .subscribeNote {
   display: flex;
@@ -396,7 +406,7 @@ main .contactRow .contactSocial {
   }
 }
 main .contactRow .contactSocial a {
-  color: #9E6019;
+  color: #9e6019;
   margin-right: 1.4rem;
   font-size: 1.6rem;
   padding-top: 1rem;
